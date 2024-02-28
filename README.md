@@ -7,7 +7,7 @@
 1. Убедитесь, что у вас установлен Docker.
 2. Склонируйте репозиторий:
 
-git clone 
+git clone https://github.com/VladDer27/ContactsList
 
 3. Запустите Docker контейнер с базой данных (PostgreSQL):
 
@@ -17,4 +17,4 @@ docker-compose up -d
 
 ./mvnw spring-boot:run
 
-5. Откройте браузер и перейдите по адресу [http://localhost:8080/contacts]
+5. Откройте браузер и перейдите по адресу [http://localhost:8085]
