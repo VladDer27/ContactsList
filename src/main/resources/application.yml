@@ -1,12 +1,13 @@
-server:
-  port: 8085
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/contacts
     username: postgres
     password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: update
-  hikari:
-    maximum-pool-size: 5
+    hikari:
+      schema: contacts_schema
+      connection-init-sql: CREATE SCHEMA IF NOT EXISTS contacts_schema
+      connection-timeout: 10000
+
+logging:
+  level:
+    org.springframework.jdbc.core: TRACE
