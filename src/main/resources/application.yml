@@ -1,6 +1,8 @@
+server:
+  port: 8085
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/contacts
+    url: jdbc:postgresql://localhost:1234/contacts
     username: postgres
     password: postgres
     hikari:

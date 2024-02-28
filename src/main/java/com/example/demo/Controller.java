@@ -25,7 +25,7 @@ public class Controller {
     public String showCreateForm(Model model) {
         model.addAttribute("contact", new Contact());
 
-        return "create";
+        return "edit";
     }
 
     @PostMapping("/contact/create")

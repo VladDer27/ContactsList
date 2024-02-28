@@ -11,11 +11,11 @@ public class ContactRowMapper implements RowMapper<Contact> {
     public Contact mapRow(ResultSet rs, int rowNum) throws SQLException {
         Contact contact = new Contact();
 
-        contact.setId(rs.getLong(Contact.Fields.id));
-        contact.setFirstName(rs.getString(Contact.Fields.firstName));
-        contact.setLastName(rs.getString(Contact.Fields.lastName));
-        contact.setPhoneNumber(rs.getString(Contact.Fields.phoneNumber));
-        contact.setEmail(rs.getString(Contact.Fields.email));
+        contact.setId(rs.getLong("id"));
+        contact.setFirstName(rs.getString("first_name"));
+        contact.setLastName(rs.getString("last_name"));
+        contact.setPhoneNumber(rs.getString("phone_number"));
+        contact.setEmail(rs.getString("email"));
 
         return contact;
     }

@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Edit Contact</h1>
-<form action="/contact/edit" method="post">
+<form th:action="${contact.id != null ? '/contact/edit' : '/contact/create'}" method="post">
     <input type="hidden" name="id" th:value="${contact.id}">
     <div>
         <label for="firstName">First Name:</label>
